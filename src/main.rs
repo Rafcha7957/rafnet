@@ -7,7 +7,6 @@ use modules::load_testing::loadtest;
 use modules::traffic_analys::trafanalys;
 
 mod modules;
-
 fn main() {
     console_clear();
 
@@ -43,7 +42,7 @@ fn main() {
                 continue;
             }   
     };
-}
+    }
 }
 
 fn console_clear() {

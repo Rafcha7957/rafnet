@@ -35,7 +35,7 @@ pub async fn portsscanner() {
             }
         };
 
-        let target = SocketAddr::from(([127, 0, 0, 1], port));
+        let target = SocketAddr::from(([1, 1, 1, 1], port));
         let is_open = scan_port(target, 1000).await;
         println!("Port {} is open: {}", target.port(), is_open);
 
